@@ -47,7 +47,7 @@ class Bot extends Client {
 			commandFiles.map(async (commandFile: string) => {
 				const command: Command = await import(commandFile);
 				const appCommand: ApplicationCommand = await this.guilds.cache
-					.get('732153200551133206')
+					.get('730061796093984840')
 					?.commands.create(command.config);
 				command.command = appCommand;
 
