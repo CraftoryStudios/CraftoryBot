@@ -1,76 +1,79 @@
 {
-  "name": "bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "workspaces": [
-    "."
-  ],
-  "scripts": {
-    "test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
-    "lint": "prettier --write .",
-    "build": "tsc"
-  },
-  "dependencies": {
-    "consola": "^2.15.3",
-    "discord.js": "github:discordjs/discord.js",
-    "express": "^4.17.1",
-    "glob": "^7.1.7"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn dlx @yarnpkg/doctor && lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.ts": "prettier --write",
-    "*.js": "prettier --write"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-angular"
-    ],
-    "rules": {
-      "scope-case": [
-        2,
-        "always",
-        "pascal-case"
-      ],
-      "type-enum": [
-        2,
-        "always",
-        [
-          "chore",
-          "build",
-          "ci",
-          "docs",
-          "feat",
-          "fix",
-          "perf",
-          "refactor",
-          "revert",
-          "style",
-          "test"
-        ]
-      ]
-    }
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^12.1.4",
-    "@commitlint/config-angular": "^12.1.4",
-    "@types/express": "^4",
-    "@types/glob": "^7.1.3",
-    "@types/node": "^15.3.0",
-    "@types/prettier": "^2.2.3",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0",
-    "prettier": "^2.3.0",
-    "ts-node": "^9.1.1",
-    "ts-node-dev": "^1.1.6",
-    "typescript": "^4.2.4"
-  }
+	"name": "bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"workspaces": [
+		"."
+	],
+	"scripts": {
+		"test": "ts-node-dev --respawn --transpile-only --poll ./src/index.ts",
+		"lint": "prettier --write .",
+		"build": "tsc"
+	},
+	"engines": {
+		"node": ">=14"
+	},
+	"dependencies": {
+		"consola": "^2.15.3",
+		"discord.js": "github:discordjs/discord.js",
+		"express": "^4.17.1",
+		"glob": "^7.1.7"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "MIT",
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn dlx @yarnpkg/doctor && lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.ts": "prettier --write",
+		"*.js": "prettier --write"
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-angular"
+		],
+		"rules": {
+			"scope-case": [
+				2,
+				"always",
+				"pascal-case"
+			],
+			"type-enum": [
+				2,
+				"always",
+				[
+					"chore",
+					"build",
+					"ci",
+					"docs",
+					"feat",
+					"fix",
+					"perf",
+					"refactor",
+					"revert",
+					"style",
+					"test"
+				]
+			]
+		}
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-angular": "^12.1.4",
+		"@types/express": "^4",
+		"@types/glob": "^7.1.3",
+		"@types/node": "^15.3.0",
+		"@types/prettier": "^2.2.3",
+		"husky": "^6.0.0",
+		"lint-staged": "^11.0.0",
+		"prettier": "^2.3.0",
+		"ts-node": "^9.1.1",
+		"ts-node-dev": "^1.1.6",
+		"typescript": "^4.2.4"
+	}
 }
