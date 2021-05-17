@@ -8,3 +8,5 @@ const bot = new Bot().start(process.env.token);
 app.get('/ping', (req, res) => {
 	return res.send('Hello');
 });
+
+app.listen(process.env.PORT, () => {});
