@@ -5,7 +5,7 @@ import Command from '../interfaces/Command';
 const command: Command = {
 	config: {
 		name: 'guide',
-		description: 'Replies with your input!',
+		description: 'Guides to Craftory Tech',
 		options: [
 			{
 				name: 'guide',
