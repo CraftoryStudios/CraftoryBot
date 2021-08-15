@@ -11,7 +11,7 @@ const command: Command = {
 	},
 	async execute(client: Bot, interaction: CommandInteraction) {
 		interaction.reply(
-			`Wiki: https://craftory.studio/craftory-tech/ \n Spigot: https://www.spigotmc.org/resources/craftory-tech.81151/ \n Github: Closed Source`
+			`Wiki: https://craftory.studio/craftory-tech/ \n Spigot: https://www.spigotmc.org/resources/craftory-tech.81151/ \n Github: https://github.com/CraftoryStudios/Craftory-Tech`
 		);
 	},
 };
