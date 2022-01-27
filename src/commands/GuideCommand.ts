@@ -100,7 +100,7 @@ const permissionsEmbed = {
 
 const resourcePackEmbed = {
 	description:
-		'If you are going to use Craftory Tech with another resource pack on your server. You will need to merge the two resource packs. Download the Craftory resource pack and learn more here.\n\nhttps://github.com/CraftoryStudios/Craftory-TechResources',
+		'If you are going to use Craftory with another resource pack on your server. You will need to merge the two resource packs. If your server is using the Transport Pipes in addition to Craftory you will need to choose the following resource pack. \n\nCraftory with Pipes:\nhttps://github.com/CraftoryStudios/Craftory-Tech/tree/master/resourcepacks/pipes \n\nCraftory Standalone: \nhttps://github.com/CraftoryStudios/Craftory-Tech/tree/master/resourcepacks/original',
 	color: 3077393,
 	author: {
 		name: 'Craftory-Tech:  Resource Pack',
